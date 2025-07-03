@@ -1,0 +1,397 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+  }
+  
+  .logo-text,
+  h1, h2, h3,
+  .hero-btn,
+  .team-caption,
+  .nav-menu a {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0077b6;
+    letter-spacing: 1px;
+    padding: 0.3em 0.8em;
+    background: #e0f7fa;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,119,182,0.08);
+    border: 2px solid #90e0ef;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.2s;
+  }
+  
+  .nav-menu a.active,
+  .nav-menu a:hover {
+    color: #0077b6;
+  }
+  
+  .nav-menu a.active::after,
+  .nav-menu a:hover::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #0077b6;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .nav-menu .login-btn {
+    background: #0077b6;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,119,182,0.15);
+  }
+  
+  .nav-menu .login-btn:hover {
+    background: #023e8a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,119,182,0.25);
+  }
+  
+  .nav-menu .login-btn::after {
+    display: none;
+  }
+  
+  .section {
+    max-width: 1100px;
+    margin: 2.5rem auto;
+    padding: 2.5rem 2rem;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  }
+  
+  .home-section {
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(120deg, #caf0f8 0%, #fff 100%);
+    padding: 0;
+  }
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 2.5rem 2.5rem 2.5rem;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-text {
+    flex: 1.2;
+  }
+  .hero-text h1 {
+    color: #0077b6;
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+  }
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .hero-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2.5rem;
+    background: #0077b6;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 8px rgba(0,119,182,0.10);
+    transition: background 0.2s, transform 0.2s;
+  }
+  .hero-btn:hover {
+    background: #023e8a;
+    transform: translateY(-2px) scale(1.04);
+  }
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .hero-image img {
+    width: 320px;
+    max-width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(0,119,182,0.13);
+    border: 4px solid #fff;
+  }
+  .hero-bg {
+    position: absolute;
+    right: -80px;
+    bottom: -80px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, #90e0ef 60%, transparent 100%);
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .services-section {
+    background: #f8faff;
+  }
+  .services-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+  .service-card {
+    background: linear-gradient(135deg, #e0f7fa 60%, #fff 100%);
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,119,182,0.10);
+    padding: 2.2rem 1.2rem 1.7rem 1.2rem;
+    text-align: center;
+    transition: transform 0.18s, box-shadow 0.18s;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .service-card:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(0,119,182,0.16);
+    background: linear-gradient(135deg, #caf0f8 70%, #fff 100%);
+  }
+  .service-icon {
+    font-size: 2.8rem;
+    margin-bottom: 1.1rem;
+    color: #0077b6;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,119,182,0.10);
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #90e0ef;
+  }
+  .service-card h3 {
+    color: #0077b6;
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .service-card p {
+    color: #333;
+    font-size: 1.05rem;
+    margin-bottom: 0;
+  }
+  
+  .appointment-section {
+    text-align: center;
+  }
+  .appointment-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background: #0077b6;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(0,119,182,0.10);
+  }
+  .appointment-btn:hover {
+    background: #023e8a;
+    transform: translateY(-2px) scale(1.04);
+  }
+  
+  .about-section {
+    background: #f1f8ff;
+  }
+  .modern-about {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-card {
+    background: linear-gradient(120deg, #e0f7fa 60%, #fff 100%);
+    border-radius: 20px;
+    box-shadow: 0 2px 16px rgba(0,119,182,0.10);
+    padding: 2.2rem 2rem 2rem 2rem;
+    flex: 2;
+    min-width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+  .about-main-text {
+    font-size: 1.15rem;
+    color: #023e8a;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+  }
+  .modern-testimonial {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,119,182,0.08);
+    padding: 1.1rem 1.3rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #0077b6;
+    position: relative;
+  }
+  .quote-icon {
+    font-size: 2.5rem;
+    color: #90e0ef;
+    font-style: normal;
+    line-height: 1;
+    margin-right: 0.5rem;
+    margin-top: -0.3rem;
+  }
+  .modern-testimonial p {
+    margin: 0;
+    color: #023e8a;
+    font-size: 1.08rem;
+    font-style: italic;
+  }
+  .modern-testimonial span {
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 1rem;
+    color: #0077b6;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .modern-team-photo {
+    flex: 1;
+    min-width: 180px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 220px;
+    margin-bottom: 1rem;
+  }
+  .modern-team-photo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 12px rgba(0,119,182,0.13);
+    border: 3px solid #90e0ef;
+    margin-bottom: 0.7rem;
+  }
+  .team-caption {
+    color: #0077b6;
+    font-weight: 600;
+    font-size: 1.08rem;
+    letter-spacing: 0.5px;
+    margin-top: 0.2rem;
+  }
+  @media (max-width: 900px) {
+    .modern-about {
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: stretch;
+    }
+    .modern-team-photo {
+      align-items: center;
+      justify-content: center;
+      height: auto;
+    }
+  }
+  
+  .footer {
+    background: #0077b6;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem 0;
+    font-size: 1rem;
+    margin-top: 2rem;
+    letter-spacing: 0.5px;
+  }
+  
+  @media (max-width: 1100px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+      padding: 2rem 1rem 1.5rem 1rem;
+    }
+    .hero-image {
+      justify-content: center;
+    }
+    .about-content {
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: stretch;
+    }
+  }
+  @media (max-width: 700px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .section {
+      padding: 1rem;
+    }
+    .nav-menu {
+      gap: 1rem;
+    }
+    .logo-text {
+      font-size: 1.3rem;
+      padding: 0.2em 0.5em;
+    }
+    .team-photo img {
+      width: 120px;
+      height: 120px;
+    }
+  } 

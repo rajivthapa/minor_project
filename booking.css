@@ -1,0 +1,141 @@
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    padding: 2rem 2.5rem 2.5rem 2.5rem;
+    text-align: center;
+  }
+  #doctor-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+  }
+  .doctor-item {
+    background: #e0f7fa;
+    margin: 0.7rem 0;
+    padding: 1rem 0;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #0077b6;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .doctor-item:hover {
+    background: #caf0f8;
+    transform: scale(1.03);
+  }
+  #slots-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0 1.5rem 0;
+  }
+  .slot-btn {
+    padding: 0.7rem 1.3rem;
+    border-radius: 8px;
+    border: none;
+    background: #90e0ef;
+    color: #023e8a;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .slot-btn:hover:not(:disabled) {
+    background: #0077b6;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  .slot-btn.booked {
+    background: #ccc;
+    color: #888;
+    cursor: not-allowed;
+    text-decoration: line-through;
+  }
+  #back-btn {
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    background: #0077b6;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  #back-btn:hover {
+    background: #023e8a;
+  }
+  .cancel-btn {
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1.1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .cancel-btn:hover {
+    background: #c1121f;
+  }
+  .doctor-box {
+    background: #e0f7fa;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,119,182,0.10);
+    padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+    margin: 1.2rem auto;
+    max-width: 350px;
+    text-align: left;
+    cursor: pointer;
+    transition: box-shadow 0.2s, transform 0.2s;
+    border: 2px solid #90e0ef;
+    position: relative;
+  }
+  .doctor-box:hover {
+    box-shadow: 0 6px 24px rgba(0,119,182,0.18);
+    transform: scale(1.03);
+    background: #caf0f8;
+  }
+  .select-doctor-btn {
+    display: block;
+    margin: 1.2rem auto 0 auto;
+    padding: 0.7rem 2rem;
+    background: #0077b6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .select-doctor-btn:hover {
+    background: #023e8a;
+    transform: scale(1.05);
+  }
+  #doctor-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .doctor-profile-img {
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,119,182,0.10);
+    border: 2px solid #90e0ef;
+    background: #fff;
+  } 
