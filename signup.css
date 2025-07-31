@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
-
 * {
     margin: 0;
     padding: 0;
@@ -40,7 +37,7 @@ body::before {
     border-radius: 24px;
     overflow: hidden;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Single shared border */
 }
 
 .signup-box {
@@ -49,19 +46,6 @@ body::before {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
-}
-
-.signup-box::before {
-    content: '\f5b0';
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    font-size: 24px;
-    color: #4facfe;
-    opacity: 0.3;
 }
 
 .signup-box h2 {
@@ -187,23 +171,11 @@ body::before {
 .side-image {
     flex: 1;
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-}
-
-.side-image::before {
-    content: '\f5b0';
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    font-size: 120px;
-    color: rgba(255, 255, 255, 0.2);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
 }
 
 .side-image::after {
@@ -243,16 +215,16 @@ body::before {
         flex-direction: column;
         max-width: 400px;
     }
-    
+
     .side-image {
         order: -1;
         min-height: 200px;
     }
-    
+
     .signup-box {
         padding: 40px 30px;
     }
-    
+
     .signup-box h2 {
         font-size: 28px;
     }
@@ -262,15 +234,15 @@ body::before {
     body {
         padding: 10px;
     }
-    
+
     .signup-box {
         padding: 30px 20px;
     }
-    
+
     .side-content {
         padding: 20px;
     }
-    
+
     .side-content h3 {
         font-size: 24px;
     }
